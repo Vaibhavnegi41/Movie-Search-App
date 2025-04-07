@@ -164,18 +164,66 @@ img{
     font-size: 30px;
     text-align: center;
 }
-@media screen and (max-width:950px){
-  .content{}
-  .card{
-    flex-direction: column;
-    gap:0;
-  }
-  .content-box{
-    width:fit-content;
-  }
-  .image {
-    width:100%;
-    height: fit-content;
-    margin-right: 0;
-  }
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 10px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        width: 90%;
+    }
+
+    .card {
+        flex-direction: column;
+        height: auto;
+        width: 95%;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    img {
+        border-radius: 16px 16px 0 0;
+    }
+
+    .content-box {
+        width: 100%;
+        border-radius: 0 0 16px 16px;
+        padding: 15px;
+    }
+
+    .upper, .center-part, .lower {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .center-part {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .favButton, .remButton {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #fav-loading {
+        font-size: 20px;
+        padding: 10px;
+    }
 }
